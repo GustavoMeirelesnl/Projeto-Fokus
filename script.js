@@ -17,14 +17,14 @@ const imagemPause = new Image('./imagens/pause.png')
 const tempoNaTela = document.querySelector('#timer')
 
 
-const somTemporizadorStart = new Audio('/sons/play.wav')
+const somTemporizadorStart = new Audio('./sons/play.wav')
 let somPlayJaTocado = false
 
-const pauseSomtemporizador = new Audio('/sons/pause.mp3')
+const pauseSomtemporizador = new Audio('./sons/pause.mp3')
 
 let somJaPausado = false
 
-const SomtemporizadorZerado = new Audio('/sons/pause.mp3')
+const SomtemporizadorZerado = new Audio('./sons/pause.mp3')
 
 musica.loop = true
 
@@ -64,7 +64,7 @@ let intervaloID
             contexto.classList.remove('active')
         })
             html.setAttribute('data-contexto', contexto)
-            banner.setAttribute('src', `/imagens/${contexto}.png`)
+            banner.setAttribute('src', `./imagens/${contexto}.png`)
  
 
         switch (contexto) {
